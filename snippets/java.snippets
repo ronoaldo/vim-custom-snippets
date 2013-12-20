@@ -1,0 +1,22 @@
+# javax.servlet.*
+
+snippet servlet
+	import javax.servlet.http.*;
+
+	public class ${1:`Filename("","untitled")`} extends HttpServlet {
+
+		private static final long serialVersionUID = 1;
+
+		${2}
+	}
+
+snippet doget
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) {
+		${1}
+	}
+
+snippet dopost
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) {
+		${1}
+	}
+
