@@ -6,9 +6,14 @@ snippet uimenu
 		${1}
 	</div>
 snippet uitable
-	<table class="ui table segment">
-		${1}
+	<table class="ui table ${1:segment}">
+		${2}
 	</table>
+snippet trth
+	<tr>
+		<th>${1}</th>
+		<td>${2}</td>
+	</tr>${3}
 snippet uibutton
 	<button class="ui ${1} button">${2}</button>${3}
 snippet uisegment
@@ -32,6 +37,14 @@ snippet uiicon
 	<i class="${1} icon"></i>${2}
 snippet uiheader
 	<h${1:1} class="ui header">${2}</${1}>
+snippet uibreadcrumb
+	<div class="ui breadcrumb">
+		<a href="${1}" class="section">${2}</a>
+		<i class="right arrow icon divider"></i>
+		<div class="active section">${3}</div>${4}
+	</div>${5}
+snippet uidivider
+	<i class="right arrow icon divider"></i>${1}
 #
 # Semantic UI - CSS
 #
@@ -50,3 +63,7 @@ snippet css-bootstrap
 # Bootstrap - JavaScript
 snippet js-bootstrap
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+snippet tr
+	<tr>${1}</tr>${2}
+snippet td
+	<td>${1}</td>${2}
