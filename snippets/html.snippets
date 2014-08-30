@@ -67,3 +67,16 @@ snippet tr
 	<tr>${1}</tr>${2}
 snippet td
 	<td>${1}</td>${2}
+snippet bsform
+	<form role="form">
+		${1}
+	</form>
+snippet bsinput
+	<div class="form-group">
+		<label for="${1:}">${2}</label>
+		<input type="${3:text}" class="form-control" id="$1" placeholder="${4:$1}">
+	</div>
+	${5}
+snippet bsbtn
+	<button type="submit" class="btn btn-${2:default}">${1}</button>
+	${3}
