@@ -2,18 +2,15 @@ snippet fn
 	func ${1} (${2}) ${3}{
 		${4}
 	}
-
 snippet fnh
 	func ${1} (w http.ResponseWriter, r *http.Request) {
 		${2}
 	}
-
 snippet err
 	if err != nil {
 		${1}
 	}
 	${2}
-
 snippet herr
 	http.Error(w, err.Error(), ${1})
 	${2}
